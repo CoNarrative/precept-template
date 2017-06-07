@@ -1,4 +1,4 @@
-(defproject precept/lein-template "0.0.1"
+(defproject precept/lein-template "0.0.3"
   :description "Created with lein-create-template"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
