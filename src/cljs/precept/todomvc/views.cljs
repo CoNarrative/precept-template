@@ -37,7 +37,7 @@
         {:for "toggle-all"}
         "Mark all as complete"]
       [:ul#todo-list
-        (for [todo visible-todos]
+        (for [todo (reverse (sort-by  :todo/entered-at visible-todos))]
           ^{:key (:db/id todo)} [todo-item todo])]]))
 
 (defn footer []

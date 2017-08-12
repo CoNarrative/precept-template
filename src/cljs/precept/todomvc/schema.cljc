@@ -9,6 +9,9 @@
      :db.type/string
      :db/unique :db.unique/identity)
 
+   (attribute :todo/entered-at
+     :db.type/long)
+
    (attribute :todo/done
      :db.type/boolean)])
 
