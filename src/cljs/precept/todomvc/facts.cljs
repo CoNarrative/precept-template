@@ -13,5 +13,6 @@
 (defn todo [title]
   (let [id (random-uuid)]
     [[id :todo/title title]
+     [id :todo/entered-at (.getTime (js/Date.))]
      [id :todo/done false]]))
 
